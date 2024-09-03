@@ -1,7 +1,13 @@
 import numpy as np 
 x = np.array([2, 4, 8])
 print(x)
+print(np.shape(x))
+print(np.size(x))
+print(np.ndim(x))
 print(type(x))
+print(x.dtype)
+print(x.astype(str))
 y = np.array((5, 10, 15))
 print(y)
 print(np.__version__)
+print(np.show_config())
