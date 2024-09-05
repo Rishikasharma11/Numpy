@@ -18,3 +18,24 @@ print(newarr)
 newarr = np.where(arr % 2 == 1)
 print(newarr)
 
+# Searchsorted- gives index
+arr = np.array([1, 4, 7, 8])
+newarr = np.searchsorted(arr, 7)
+print(newarr)
+
+# Search From the Right Side
+arr = np.array([1, 4, 7, 8])
+newarr = np.searchsorted(arr, 4, 'right')
+print(newarr)
+
+arr = np.array([1, 3, 5, 7])
+x = np.searchsorted(arr, [2, 4, 6])
+print(x)
+
+arr = np.array([10, 20, 30, 40 , 50])
+x = np.searchsorted(arr, [5, 15, 25])
+print(x)
+
+# linespace- will break in from 2 to 16 in 3 parts
+newarr = np.linspace(2,16,3)
+print(newarr)
